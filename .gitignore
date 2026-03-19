@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Data folders
+data/uploads/
+data/outputs/
+
+# Node
+node_modules/
+dist/
+
+# Environment
+.env

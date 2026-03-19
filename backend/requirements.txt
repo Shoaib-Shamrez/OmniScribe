@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+openai-whisper
+ffmpeg-python
+celery[redis]
+redis
+sqlalchemy
+psycopg2-binary
+python-dotenv
