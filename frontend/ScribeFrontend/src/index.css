@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0d0d0f;
+  --color-surface: #141417;
+  --color-border-custom: #232329;
+  --color-amber: #f59e0b;
+  --color-amber-dim: #78490a;
+  --color-text-main: #e8e8ea;
+  --color-muted: #6b6b78;
+  --font-syne: 'Syne', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@keyframes wave {
+  0%   { height: 4px; }
+  100% { height: 36px; }
+}
+
+@keyframes spin-arc {
+  0%   { stroke-dashoffset: 276; }
+  50%  { stroke-dashoffset: 60; }
+  100% { stroke-dashoffset: 276; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.animate-wave {
+  animation: wave 1s ease-in-out infinite alternate;
+}
+
+.animate-spin-arc {
+  animation: spin-arc 2s ease-in-out infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
