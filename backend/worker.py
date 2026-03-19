@@ -5,7 +5,7 @@ from celery import Celery
 from redis import Redis
 from utils import prepare_audio
 
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 celery = Celery(
     "worker",
