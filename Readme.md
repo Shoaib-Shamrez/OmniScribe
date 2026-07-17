@@ -2,6 +2,16 @@
 
 A production-grade Speech-to-Text API that transcribes audio and video files into timestamped text using OpenAI Whisper. Built with a distributed async architecture to handle files of any length — including 2-3 hour meeting recordings.
 
+## 🚀 Live Demo
+
+**Frontend (Vercel):** https://omni-scribe-delta.vercel.app
+
+> **Note**
+>
+> The frontend is publicly deployed on Vercel. The backend is **not hosted 24/7** because OpenAI Whisper requires significantly more RAM than the free hosting platforms I tested can reliably provide.
+>
+> If you'd like to test the complete application, please email me at **shoaibshamrez@gmail.com**. I'll start the backend server and let you know once it's online so you can test the application end-to-end.
+
 ---
 
 ## Demo

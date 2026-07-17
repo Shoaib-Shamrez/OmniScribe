@@ -80,8 +80,7 @@ export default function App() {
     } catch (err) {
       if (axios.isAxiosError(err)) {
         setErrorMsg(
-          err.response?.data?.detail ??
-            "Could not reach the server. Is it running?",
+          "Backend server is unavailable. Please contact me to start the backend.",
         );
       } else {
         setErrorMsg("An unexpected error occurred.");
