@@ -13,7 +13,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "https://omni-scribe-delta.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -45,6 +45,9 @@ async def transcribe_audio(file: UploadFile = File(...)):
 
     return {"job_id": job_id, "status": "queued"}
 
+@app.get("/cors-test")
+async def cors_test():
+    return {"ok": True}
 
 @app.get("/status/{job_id}")
 async def get_status(job_id: str):
